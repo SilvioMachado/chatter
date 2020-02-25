@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: com.silvio
+---
+testFramework: kotlintest
+sourceLanguage: kotlin
