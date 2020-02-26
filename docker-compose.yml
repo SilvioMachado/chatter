@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: 'postgres'
+    image: 'postgres:latest'
+    ports:
+      - '5432:5432'
+    volumes:
+      - '~/dev/chat-app/:/var/lib/postgres/data'
+    environment:
+      POSTGRES_PASSWORD: 'postgres'

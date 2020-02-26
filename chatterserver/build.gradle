@@ -39,6 +39,11 @@ dependencies {
     testImplementation "io.micronaut.test:micronaut-test-kotlintest"
     testImplementation "io.mockk:mockk:1.9.3"
     testImplementation "io.kotlintest:kotlintest-runner-junit5:3.3.2"
+
+    // Hibernate stuff
+    implementation "io.micronaut.configuration:micronaut-hibernate-jpa"
+    implementation "io.micronaut.configuration:micronaut-jdbc-hikari"
+    runtime "com.h2database:h2"
 }
 
 test.classpath += configurations.developmentOnly
