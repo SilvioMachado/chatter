@@ -7,6 +7,23 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - '~/dev/chat-app/:/var/lib/postgres/data'
+      - '/Users/silvio.machado/dev/chat-app/:/var/lib/postgres/data'
+      environment:
+        POSTGRES_PASSWORD: 'postgres'
+  mongo:
+    container_name: 'mongo'
+    image: 'mongo:latest'
+    volumes:
+      - '/Users/silvio.machado/dev/chat-app/data:/data/db'
     environment:
-      POSTGRES_PASSWORD: 'postgres'
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
