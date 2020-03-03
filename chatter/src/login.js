@@ -1,22 +1,14 @@
 import React from 'react';
+import LoginBox from './login-box';
 
 const Login = () => {
   
   return (
     <div>
-      <form>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Password:
-          <input type="text" name="name" />
-        </label>
-        <input type="submit" value="Enviar" />
-      </form>
+      <LoginBox />
     </div>
   )
 };
 
 export default Login;
+
