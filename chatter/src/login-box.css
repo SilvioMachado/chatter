@@ -1,10 +1,65 @@
 .background {
   background-color: #36393f;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .text {
   color: #FFFFFF;
-  line-height: 200%;
   font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.LoginText {
+  color: #dcddde;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+input {
+  color: #18191c;
+  background-color: #dcddde;
+  border-color: #dcddde;
+  margin-bottom: 10px;
+}
+
+/* unvisited link */
+a:link {
+  color: #7289da;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #7289da;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7289da;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #7289da;
+  text-decoration: none;
+}
+
+.loginButton {
+  border-radius: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  font-style: bold;
+  padding: 20px;
+  background-color: #7289da;
+  width: 330px;
+}
+
+.centerWrapper { 
+  margin: 0 auto;
+  width: 50%;
 }
