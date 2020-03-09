@@ -8,8 +8,8 @@ services:
       - '5432:5432'
     volumes:
       - '/Users/silvio.machado/dev/chat-app/:/var/lib/postgres/data'
-      environment:
-        POSTGRES_PASSWORD: 'postgres'
+    environment:
+      POSTGRES_PASSWORD: 'postgres'
   mongo:
     container_name: 'mongo'
     image: 'mongo:latest'
