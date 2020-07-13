@@ -6,15 +6,17 @@ import { ChatWindow } from './chat-window';
 import * as serviceWorker from './serviceWorker';
 import Login from './login';
 
-const App = () => (
-  <Router>
+const App = () => {
+  return(
+    <Router>
     <Switch>
       <Route path="/" component={Login} />
       <Route path="/login" component={Login} />
       <Route path="/chat" component={ChatWindow} />
     </Switch>
   </Router>
-)
+  )
+  }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
